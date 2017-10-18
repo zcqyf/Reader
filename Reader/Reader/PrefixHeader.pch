@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  Reader
+//
+//  Created by qing on 2017/10/18.
+//  Copyright © 2017年 YG. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <CoreText/CoreText.h>
+
+#import <UIImageView+WebCache.h>
+#import <MBProgressHUD.h>
+#import <DTCoreText.h>
+
+//#import <SSZipArchive.h>
+//  TODO 最后确定用哪一个解压库
+//#import <ZipArchive.h>
+
+#import "GTMNSString+HTML.h"
+#import "NSString+HTML.h"
+
+
+
+#import "YGRootModel.h"
+#import "YGBookInfoModel.h"
+#import "YGReaderGlobalConst.h"
+#import "YGReadOperation.h"
+#import "YGBookModel.h"
+#import "YGReadConfig.h"
+#import "YGCatalogueModel.h"
+#import "YGChapterModel.h"
+
+
+
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */

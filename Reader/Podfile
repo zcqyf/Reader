@@ -1,0 +1,14 @@
+platform:ios, '8.0'
+
+target 'Reader' do
+
+    pod 'SDWebImage'
+    pod 'DTCoreText'
+    pod 'ZipArchive'
+    pod 'MBProgressHUD'
+
+end
+
+
+
+

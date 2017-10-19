@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-
-
+#import "YGReadPageViewController.h"
 
 @interface ViewController () <NSXMLParserDelegate>
 
@@ -35,9 +34,21 @@
     
     NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"交锋" withExtension:@"epub"];
     
-    YGBookModel *bookModel = [YGBookModel getLocalModelWithURL:fileURL];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        YGBookModel *bookModel = [YGBookModel getLocalModelWithURL:fileURL];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            YGReadPageViewController *vc = [YGReadPageViewController new];
+            [YGReadManager.sharedManager setResourceURL:fileURL];
+            [YGReadManager.sharedManager setBookModel:bookModel];
+            [YGReadManager.sharedManager setRmDelegate:vc];
+            [self presentViewController:vc animated:YES completion:nil];
+        });
+    });
     
-    NSLog(@"%@", bookModel);
+    
+    
+    
+//    NSLog(@"%@", bookModel);
 }
 
 

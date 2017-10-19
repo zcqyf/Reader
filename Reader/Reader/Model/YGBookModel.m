@@ -7,6 +7,7 @@
 //
 
 #import "YGBookModel.h"
+#import "YGReadManager.h"
 
 @implementation YGBookModel
 
@@ -26,7 +27,7 @@
     if (self) {
         _bookBasicInfo = [YGBookInfoModel new];
         _chapters = [YGReadOperation ePubFileHandle:ePubPath bookInfoModel:_bookBasicInfo];
-        //  XDSRecordModel
+        //  XDSRecordModel  TODO
         
         _bookType = YGEBookTypeEpub;
     }
@@ -35,10 +36,14 @@
 
 + (void)updateLocalModel:(YGBookModel *)bookModel url:(NSURL *)url {
     NSString *key = [url.path lastPathComponent];
-    NSMutableData *data=[[NSMutableData alloc]init];
-    NSKeyedArchiver *archiver=[[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
+    
+    NSMutableData *data = [[NSMutableData alloc] init];
+    
+    NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
+    
     [archiver encodeObject:bookModel forKey:key];
     [archiver finishEncoding];
+    
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:key];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
@@ -73,7 +78,9 @@
     return model;
 }
 
-
+- (void)loadContentInChapter:(YGChapterModel *)chapterModel {
+    [chapterModel paginateEpubWithBounds: [YGReadManager readViewBounds]];
+}
 
 
 @end

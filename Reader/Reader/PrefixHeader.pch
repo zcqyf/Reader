@@ -19,19 +19,30 @@
 //  TODO 最后确定用哪一个解压库
 //#import <ZipArchive.h>
 
+#import "YGReaderGlobalConst.h"
 #import "GTMNSString+HTML.h"
 #import "NSString+HTML.h"
-
-
-
-#import "YGRootModel.h"
-#import "YGBookInfoModel.h"
-#import "YGReaderGlobalConst.h"
-#import "YGReadOperation.h"
-#import "YGBookModel.h"
+//#import "XDSReaderUtil.h"
 #import "YGReadConfig.h"
+
+#import "YGNoteModel.h"
+#import "YGMarkModel.h"
 #import "YGCatalogueModel.h"
+#import "YGBookInfoModel.h"
 #import "YGChapterModel.h"
+#import "YGRecordModel.h"
+#import "YGBookModel.h"
+
+#import "YGReadOperation.h"
+
+//#import "YGMagnifierView.h"
+#import "YGReadView.h"
+//#import "YGReaderDelegate.h"
+
+#import "YGReadViewController.h"
+//#import "YGReadPageViewController.h"
+#import "YGReadManager.h"
+
 
 
 

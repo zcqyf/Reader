@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		20C3A77DC3A3103937123586 /* libPods-Reader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB0470A31692E4B852774B3 /* libPods-Reader.a */; };
+		D80F5F811F98359F00CAF4C9 /* YGRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F5F801F98359F00CAF4C9 /* YGRecordModel.m */; };
+		D80F5F841F9835AD00CAF4C9 /* YGMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F5F831F9835AD00CAF4C9 /* YGMarkModel.m */; };
+		D80F5F871F9835B600CAF4C9 /* YGNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F5F861F9835B600CAF4C9 /* YGNoteModel.m */; };
+		D80F5F8A1F983B1300CAF4C9 /* YGReadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F5F891F983B1300CAF4C9 /* YGReadManager.m */; };
+		D80F5F8D1F983C8000CAF4C9 /* YGReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F5F8C1F983C8000CAF4C9 /* YGReadViewController.m */; };
+		D80F5F901F983CE900CAF4C9 /* YGReadView.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F5F8F1F983CE900CAF4C9 /* YGReadView.m */; };
+		D80F5F931F98426900CAF4C9 /* YGReadPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F5F921F98426900CAF4C9 /* YGReadPageViewController.m */; };
+		D80F5F961F98777C00CAF4C9 /* YGMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F5F951F98777C00CAF4C9 /* YGMagnifierView.m */; };
+		D80F5F991F987A2800CAF4C9 /* YGReaderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F5F981F987A2800CAF4C9 /* YGReaderUtil.m */; };
 		D8E0E2041F96E36E001A7D0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0E2031F96E36E001A7D0E /* AppDelegate.m */; };
 		D8E0E2071F96E36E001A7D0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0E2061F96E36E001A7D0E /* ViewController.m */; };
 		D8E0E20A1F96E36E001A7D0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E0E2081F96E36E001A7D0E /* Main.storyboard */; };
@@ -65,6 +74,24 @@
 /* Begin PBXFileReference section */
 		528A7403CA4CDD10C0E64F55 /* Pods-Reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reader/Pods-Reader.release.xcconfig"; sourceTree = "<group>"; };
 		CDB0470A31692E4B852774B3 /* libPods-Reader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80F5F7F1F98359F00CAF4C9 /* YGRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecordModel.h; sourceTree = "<group>"; };
+		D80F5F801F98359F00CAF4C9 /* YGRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecordModel.m; sourceTree = "<group>"; };
+		D80F5F821F9835AD00CAF4C9 /* YGMarkModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGMarkModel.h; sourceTree = "<group>"; };
+		D80F5F831F9835AD00CAF4C9 /* YGMarkModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGMarkModel.m; sourceTree = "<group>"; };
+		D80F5F851F9835B600CAF4C9 /* YGNoteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGNoteModel.h; sourceTree = "<group>"; };
+		D80F5F861F9835B600CAF4C9 /* YGNoteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGNoteModel.m; sourceTree = "<group>"; };
+		D80F5F881F983B1300CAF4C9 /* YGReadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGReadManager.h; sourceTree = "<group>"; };
+		D80F5F891F983B1300CAF4C9 /* YGReadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGReadManager.m; sourceTree = "<group>"; };
+		D80F5F8B1F983C8000CAF4C9 /* YGReadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGReadViewController.h; sourceTree = "<group>"; };
+		D80F5F8C1F983C8000CAF4C9 /* YGReadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGReadViewController.m; sourceTree = "<group>"; };
+		D80F5F8E1F983CE900CAF4C9 /* YGReadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGReadView.h; sourceTree = "<group>"; };
+		D80F5F8F1F983CE900CAF4C9 /* YGReadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGReadView.m; sourceTree = "<group>"; };
+		D80F5F911F98426900CAF4C9 /* YGReadPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGReadPageViewController.h; sourceTree = "<group>"; };
+		D80F5F921F98426900CAF4C9 /* YGReadPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGReadPageViewController.m; sourceTree = "<group>"; };
+		D80F5F941F98777C00CAF4C9 /* YGMagnifierView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGMagnifierView.h; sourceTree = "<group>"; };
+		D80F5F951F98777C00CAF4C9 /* YGMagnifierView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGMagnifierView.m; sourceTree = "<group>"; };
+		D80F5F971F987A2800CAF4C9 /* YGReaderUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGReaderUtil.h; sourceTree = "<group>"; };
+		D80F5F981F987A2800CAF4C9 /* YGReaderUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGReaderUtil.m; sourceTree = "<group>"; };
 		D8E0E1FF1F96E36E001A7D0E /* Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E0E2021F96E36E001A7D0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8E0E2031F96E36E001A7D0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -326,6 +353,10 @@
 		D8E0E2741F972824001A7D0E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D80F5F8B1F983C8000CAF4C9 /* YGReadViewController.h */,
+				D80F5F8C1F983C8000CAF4C9 /* YGReadViewController.m */,
+				D80F5F911F98426900CAF4C9 /* YGReadPageViewController.h */,
+				D80F5F921F98426900CAF4C9 /* YGReadPageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,6 +364,10 @@
 		D8E0E2751F972824001A7D0E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D80F5F8E1F983CE900CAF4C9 /* YGReadView.h */,
+				D80F5F8F1F983CE900CAF4C9 /* YGReadView.m */,
+				D80F5F941F98777C00CAF4C9 /* YGMagnifierView.h */,
+				D80F5F951F98777C00CAF4C9 /* YGMagnifierView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -350,6 +385,12 @@
 				D8E0E2881F974BC1001A7D0E /* YGChapterModel.m */,
 				D8E0E28A1F9753C4001A7D0E /* YGCatalogueModel.h */,
 				D8E0E28B1F9753C4001A7D0E /* YGCatalogueModel.m */,
+				D80F5F7F1F98359F00CAF4C9 /* YGRecordModel.h */,
+				D80F5F801F98359F00CAF4C9 /* YGRecordModel.m */,
+				D80F5F821F9835AD00CAF4C9 /* YGMarkModel.h */,
+				D80F5F831F9835AD00CAF4C9 /* YGMarkModel.m */,
+				D80F5F851F9835B600CAF4C9 /* YGNoteModel.h */,
+				D80F5F861F9835B600CAF4C9 /* YGNoteModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -363,6 +404,10 @@
 				D8E0E2851F973D35001A7D0E /* YGReaderGlobalConst.m */,
 				D8E0E28D1F97543E001A7D0E /* YGReadConfig.h */,
 				D8E0E28E1F97543E001A7D0E /* YGReadConfig.m */,
+				D80F5F881F983B1300CAF4C9 /* YGReadManager.h */,
+				D80F5F891F983B1300CAF4C9 /* YGReadManager.m */,
+				D80F5F971F987A2800CAF4C9 /* YGReaderUtil.h */,
+				D80F5F981F987A2800CAF4C9 /* YGReaderUtil.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -556,18 +601,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E0E26B1F970A2C001A7D0E /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				D80F5F931F98426900CAF4C9 /* YGReadPageViewController.m in Sources */,
 				D8E0E28F1F97543E001A7D0E /* YGReadConfig.m in Sources */,
 				D8E0E2681F970A2C001A7D0E /* CXMLDocument_PrivateExtensions.m in Sources */,
+				D80F5F991F987A2800CAF4C9 /* YGReaderUtil.m in Sources */,
 				D8E0E2071F96E36E001A7D0E /* ViewController.m in Sources */,
 				D8E0E27C1F972DA9001A7D0E /* YGBookModel.m in Sources */,
 				D8E0E2791F972853001A7D0E /* YGRootModel.m in Sources */,
 				D8E0E26C1F970A2C001A7D0E /* CXMLNamespaceNode.m in Sources */,
 				D8E0E2691F970A2C001A7D0E /* CXMLElement.m in Sources */,
+				D80F5F811F98359F00CAF4C9 /* YGRecordModel.m in Sources */,
 				D8E0E2651F970A2C001A7D0E /* CXMLNode_CreationExtensions.m in Sources */,
+				D80F5F8D1F983C8000CAF4C9 /* YGReadViewController.m in Sources */,
+				D80F5F841F9835AD00CAF4C9 /* YGMarkModel.m in Sources */,
 				D8E0E2661F970A2C001A7D0E /* CXHTMLDocument.m in Sources */,
 				D8E0E2711F970A2C001A7D0E /* CTidy.m in Sources */,
 				D8E0E2641F970A2C001A7D0E /* CXMLDocument_CreationExtensions.m in Sources */,
 				D8E0E28C1F9753C4001A7D0E /* YGCatalogueModel.m in Sources */,
+				D80F5F871F9835B600CAF4C9 /* YGNoteModel.m in Sources */,
 				D8E0E2891F974BC1001A7D0E /* YGChapterModel.m in Sources */,
 				D8E0E26A1F970A2C001A7D0E /* CXMLElement_CreationExtensions.m in Sources */,
 				D8E0E2701F970A2C001A7D0E /* CXMLUnsupportedNode.m in Sources */,
@@ -579,10 +630,13 @@
 				D8E0E26D1F970A2C001A7D0E /* CXMLNode.m in Sources */,
 				D8E0E2731F970A2C001A7D0E /* UIView+XDSHyperLink.m in Sources */,
 				D8E0E2721F970A2C001A7D0E /* UIImage+ImageEffects.m in Sources */,
+				D80F5F961F98777C00CAF4C9 /* YGMagnifierView.m in Sources */,
 				D8E0E2121F96E36E001A7D0E /* main.m in Sources */,
+				D80F5F8A1F983B1300CAF4C9 /* YGReadManager.m in Sources */,
 				D8E0E2041F96E36E001A7D0E /* AppDelegate.m in Sources */,
 				D8E0E2861F973D35001A7D0E /* YGReaderGlobalConst.m in Sources */,
 				D8E0E2831F9736F7001A7D0E /* YGBookInfoModel.m in Sources */,
+				D80F5F901F983CE900CAF4C9 /* YGReadView.m in Sources */,
 				D8E0E2671F970A2C001A7D0E /* CXMLDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

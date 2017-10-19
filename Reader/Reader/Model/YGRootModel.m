@@ -23,6 +23,7 @@
         NSString *name = [NSString stringWithUTF8String:propertyName];
         //利用KVC取出对应属性的值
         id value = [self valueForKey:name];
+        
         //归档到文件中
         [aCoder encodeObject:value forKey:name];
     }

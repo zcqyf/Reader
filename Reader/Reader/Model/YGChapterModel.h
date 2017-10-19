@@ -28,8 +28,8 @@
 @property (nonatomic, readonly) NSDictionary *locationWithPageIdMapping;//存放对应id的location，用于根据链接跳转到指定页面   @{NSString:NSNumber}
 
 @property (nonatomic, readonly) NSArray<NSString *> *imageSrcArray;//本章所有图片的链接
-//@property (nonatomic, readonly) NSArray<XDSNoteModel *>*notes;
-//@property (nonatomic, readonly) NSArray<XDSMarkModel *>*marks;
+@property (nonatomic, readonly) NSArray<YGNoteModel *>*notes;
+@property (nonatomic, readonly) NSArray<YGMarkModel *>*marks;
 
 - (void)paginateEpubWithBounds:(CGRect)bounds;
 //- (void)addNote:(XDSNoteModel *)noteModel;//insert a book note into chapter 向该章节中插入一条笔记
